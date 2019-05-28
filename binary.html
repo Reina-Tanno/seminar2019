@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        var result;
+        function button1Pressed() {
+            //var random = Math.random();
+            //rand = rand * 100;
+            var rand1 = Math.floor(Math.random() * 2);
+            var rand2 = Math.floor(Math.random() * 2);
+            var rand3 = Math.floor(Math.random() * 2);
+            var rand4 = Math.floor(Math.random() * 2);
+
+
+
+
+
+
+            document.getElementById("1").value = rand1;
+            document.getElementById("2").value = rand2;
+            document.getElementById("3").value = rand3;
+            document.getElementById("4").value = rand4;
+
+            result = rand4 * 1 + rand3 * 2 + rand2 * 4 + rand1 * 8;
+        }
+        function button2Pressed() {
+            document.getElementById("5").value = result;
+
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <input id="1" type="text">
+    <input id="2" type="text">
+    <input id="3" type="text">
+    <input id="4" type="text">
+    <hr>
+    <button onclick="button1Pressed()">生成</button>
+    　
+    <hr>
+    <button onclick="button2Pressed()">計算</button>
+    <input id="5" type="text">
+    <p id="result"></p>
+
+</body>
+
+</html>
