@@ -5,20 +5,24 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>
+
         function button1Pressed() {
-            document.getElementById("result").innerHTML = "hello world";
+            var tag = "";
+            tag = "<ul><li>1</li><li>2</li><li>3</li><li>4</li></ul>";
+            document.getElementById("x").innerHTML = tag;
+
         }
     </script>
-
 
 </head>
 
 <body>
-    <h1>xxxx</h1>
-    <button onclick="button1Pressed()">x</button>
-    <button onclick="button2Pressed()">y</button>
-    <hr>
-    <p id="result">xxxx</p>
+    <div id="x"></div>
+
+    <button onclick="button1Pressed()">生成</button>
+
+
+
 </body>
 
 </html>
