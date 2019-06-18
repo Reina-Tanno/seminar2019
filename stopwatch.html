@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+
+        var time = 0;
+        //var timer;
+
+        function button1Pressed() {
+            setInterval(tick, 1000);
+        }
+
+        function tick() {
+            time = time + 1;
+
+            document.getElementById("x").innerHTML = time;
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <div id="x"></div>
+
+    <button onclick="button1Pressed()">生成</button>
+
+
+
+</body>
+
+</html>
