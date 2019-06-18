@@ -7,10 +7,10 @@
     <script>
 
         var time = 0;
-        //var timer;
+        var timer;
 
         function button1Pressed() {
-            setInterval(tick, 1000);
+            timer = setInterval(tick, 1000);
         }
 
         function tick() {
@@ -18,6 +18,9 @@
 
             document.getElementById("x").innerHTML = time;
 
+        }
+        function button2Pressed() {
+            clearInterval(timer);
         }
 
     </script>
@@ -27,7 +30,9 @@
 <body>
     <div id="x"></div>
 
-    <button onclick="button1Pressed()">生成</button>
+    <button onclick="button1Pressed()">A</button>
+    <button onclick="button2Pressed()">B</button>
+
 
 
 
