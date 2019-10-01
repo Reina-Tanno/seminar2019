@@ -9,12 +9,23 @@
     <script>
 
         function button1Pressed() {
+
+
             var fruits = [];
+            var tag = "";
+
             fruits.push("りんご");
             fruits.push("みかん");
 
-
-            document.getElementById("x").innerHTML = str;
+            tag = tag + "<ul>";
+            tag = tag + "<li>";
+            tag = tag + fruits[0];
+            tag = tag + "</li>";
+            tag = tag + "<li>";
+            tag = tag + fruits[1];
+            tag = tag + "</li>";
+            tag = tag + "</ul>";
+            document.getElementById("x").innerHTML = tag;
 
         }
     </script>

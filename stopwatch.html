@@ -10,7 +10,7 @@
         var timer;
 
         function button1Pressed() {
-            timer = setInterval(tick, 1000);
+            timer = setInterval(tick, 1000);//tickはミリ秒、1秒ごとにカウントアップ
         }
 
         function tick() {
@@ -22,6 +22,14 @@
         function button2Pressed() {
             clearInterval(timer);
         }
+        function button3Pressed() {
+            time = 0;
+            clearInterval(timer);
+            document.getElementById("x").innerHTML = time;
+
+        }
+
+
 
     </script>
 
@@ -30,11 +38,9 @@
 <body>
     <div id="x"></div>
 
-    <button onclick="button1Pressed()">A</button>
-    <button onclick="button2Pressed()">B</button>
-
-
-
+    <button onclick="button1Pressed()">スタート</button>
+    <button onclick="button2Pressed()">ストップ</button>
+    <button onclick="button3Pressed()">C</button>
 
 </body>
 

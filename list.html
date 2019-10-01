@@ -8,7 +8,16 @@
 
         function button1Pressed() {
             var tag = "";
-            tag = "<ul><li>1</li><li>2</li><li>3</li><li>4</li></ul>";
+            // tag = "<ul><li>1</li><li>2</li><li>3</li><li>4</li></ul>";
+            tag = tag + "<ul>";
+            tag = tag + "<li>";
+            tag = tag + 1;
+            tag = tag + "</li>";
+            tag = tag + "<li>";
+            tag = tag + 2;
+            tag = tag + "</li>";
+            tag = tag + "</ul>";
+
             document.getElementById("x").innerHTML = tag;
 
         }
